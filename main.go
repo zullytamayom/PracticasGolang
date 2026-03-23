@@ -15,6 +15,7 @@ func main() {
 	fmt.Println(numero)
 	var a, b, c = 3, 4, 5
 	fmt.Println(a, b, c)
-	nombre, edad := "Zully", 37
-	fmt.Printf("mi nombre es %s y tengo %d anios", nombre, edad)
+	nombre := "Zully"
+	fmt.Printf("mi nombre es %s y tengo %d anios", nombre, mathutil.Edad)
+
 }
