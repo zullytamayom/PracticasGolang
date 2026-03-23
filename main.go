@@ -20,5 +20,13 @@ func main() {
 	fmt.Println("-----------------------------")
 
 	fmt.Println(mathutil.Multiplicar(5))
+	fmt.Println("-----------------------------")
+	//fmt.Println(sumar(5, 8))
+	total := sumar(2, 5)
+	fmt.Println(total)
 
+}
+
+func sumar(x, y int) int {
+	return x + y
 }
