@@ -1,6 +1,7 @@
 package main
 
 import (
+	"errors"
 	"fmt"
 	"golang/mathutil"
 	"math"
@@ -25,8 +26,21 @@ func main() {
 	total := sumar(2, 5)
 	fmt.Println(total)
 
+	resultadoDivision, err := dividir(5, 2)
+	if err != nil {
+		fmt.Println("Hubo un error")
+	}
+	fmt.Println(resultadoDivision)
+
 }
 
 func sumar(x, y int) int {
 	return x + y
+}
+
+func dividir(x, y int) (int, error) {
+	if y <= 0 {
+		return 0, errors.New("No se puede dividir entre cero.")
+	}
+	return x / y, nil
 }
