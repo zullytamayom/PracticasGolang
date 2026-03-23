@@ -17,5 +17,8 @@ func main() {
 	fmt.Println(a, b, c)
 	nombre := "Zully"
 	fmt.Printf("mi nombre es %s y tengo %d anios", nombre, mathutil.Edad)
+	fmt.Println("-----------------------------")
+
+	fmt.Println(mathutil.Multiplicar(5))
 
 }
